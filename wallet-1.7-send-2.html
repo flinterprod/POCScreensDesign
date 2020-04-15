@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Flinter</title>
+    <meta name="description" content="Flinter">
+
+    <meta property="og:title" content="Flinter">
+    <meta property="og:description" content="Flinter">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://flinter.com/">
+    <meta property="og:image" content="https://flinter.com/img/share-img.jpg">
+
+    <meta name="author" content="UP Studio">
+
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16.png">
+
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/animate.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+
+
+<div class="block-xs d-block d-md-none">
+    <div class="wrap bg-blue">
+        <header class="container ">
+            <div class="d-flex justify-content-between menu-block align-items-center">
+                <div class="outer-menu">
+                    <input class="checkbox-toggle" type="checkbox">
+                    <div class="hamburger">
+                        <div></div>
+                        <strong class="hamburger-text">WALLET</strong>
+                    </div>
+                    <div class="menu">
+                        <div>
+                            <div>
+                                <ul>
+                                    <li><a href="#">Notifications</a></li>
+                                    <li><a href="#">Preferences</a></li>
+                                    <li><a href="#">wallet</a></li>
+                                    <li><a href="#">Invite a friend</a></li>
+                                    <li><a href="#">Help</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="search">
+                    <span class="search-block"><img src="/img/design/icons/search.svg" alt="" class="img-fluid"></span>
+                    <span class="search-block"><img src="/img/design/icons/more.svg" alt="" class="img-fluid"></span>
+                </div>
+            </div>
+        </header>
+
+        <div class="container" id="wallet-tab">
+            <ul class="nav nav-pills d-flex justify-content-between" id="pills-tab"  role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="pills-tokens-tab" data-toggle="pill" href="#pills-tokens" role="tab" aria-controls="pills-tokens" aria-selected="true">Get tokens</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="pills-send-tab" data-toggle="pill" href="#pills-send" role="tab" aria-controls="pills-send" aria-selected="false">Send</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="pills-exchange-tab" data-toggle="pill" href="#pills-exchange" role="tab" aria-controls="pills-exchange" aria-selected="false">Exchange</a>
+                </li>
+            </ul>
+            <div class="bg-wallet">
+                <div class="tab-content" id="wallet-info">
+                    <div class="tab-pane fade show active" id="pills-tokens" role="tabpanel" aria-labelledby="pills-tokens-tab">
+                        <div class="row">
+                            <div class="col-6">
+                                <h1>Token Balance</h1>
+                                <div class="balance-wallet">
+                                    <strong> 1 567</strong>
+                                    <img src="/img/design/icons/icon-wallet-heart.png" alt="" class="img-fluid">
+                                    <p>≈<span>567</span>$</p>
+                                </div>
+
+                            </div>
+                            <div class="col-6 wallet-info-img">
+                                <div>
+                                    <img src="/img/design/img-people/img-person-150.png" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="col-12 buy-token-block">
+                                <div class="buy-token">
+                                    <div>
+                                        <a href="/wallet-1.1-purchase.html">
+                                            <img src="/img/design/icons/icon-add-token.png" alt="" class="img-fluid">
+                                            <strong>Buy tokens</strong>
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a href="/wallet-1.4-receive.html">
+                                            <img src="/img/design/icons/icon-receive.png" alt="" class="img-fluid">
+                                            <strong>Receive</strong>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="quantity-token text-center d-flex justify-content-between">
+                            <img src="/img/design/icons/icons-minus.png" alt="">
+                            <input type="text" placeholder="1">
+                            <img src="/img/design/icons/icons-plus.png" alt="">
+                        </div>
+
+                        <span class="token-text-input">How much would you like to send? </span>
+
+                        <div class="btn-wallet-next">
+                            <a href="/" data-toggle="modal" data-target="#confirm-send-modal">Next</a>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-send" role="tabpanel" aria-labelledby="pills-send-tab">Test</div>
+                    <div class="tab-pane fade" id="pills-exchange" role="tabpanel" aria-labelledby="pills-exchange-tab">Test</div>
+                </div>
+
+
+                <div class="modal fade" id="confirm-send-modal" tabindex="-1" role="dialog" aria-labelledby="confirm-send-label" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title" id="confirm-send-label">Confirm transfer?</h1>
+                            </div>
+                            <div class="modal-body">
+                                <p>Yourfriend ‘user id’ will receive
+                                    ‘N tokens’ from you</p>
+                                <strong>Are you sure?</strong>
+                            </div>
+                            <div class="modal-footer">
+                                <button  class="btn-modal-cancel" type="button" data-dismiss="modal">Cancel</button>
+                                <a href="#" class="btn-modal-ok">Ok</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="d-flex align-items-center justify-content-around d-md-none">
+    <a href="/"><img src="/img/design/icons/glass.svg" alt=""></a>
+    <a href="/"><img src="/img/design/icons/logo-color.svg" alt=""></a>
+    <a href="/"><img src="/img/design/icons/user.svg" alt=""></a>
+</footer>
+
+<div class="block-lg d-none d-md-block d-md-flex align-items-center justify-content-center">
+    <div>
+        <img src="/img/qr-code.png" alt="">
+    </div>
+</div>
+
+<script src="/js/jquery.min.js"></script>
+<script src="/js/bootstrap.bundle.min.js"></script>
+<script src="/js/scripts.js"></script>
+</body>
+</html>
